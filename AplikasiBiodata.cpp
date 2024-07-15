@@ -41,3 +41,13 @@ Mahasiswa* cari_mahasiswa(string nim) {
         }
         return nullptr;
     }
+    void tampilkan_semua_mahasiswa() {
+        if (data_mahasiswa.empty()) {
+            cout << "Tidak ada data mahasiswa." << endl;
+        } else {
+            for (const auto& mahasiswa : data_mahasiswa) {
+                cout << "Nama: " << mahasiswa.nama << ", NIM: " << mahasiswa.nim << ", Jurusan: " << mahasiswa.jurusan << endl;
+            }
+        }
+    }
+};
