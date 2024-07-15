@@ -13,3 +13,14 @@ public:
     Mahasiswa(string n, string ni, string j) : nama(n), nim(ni), jurusan(j) {}
 };
 
+class BiodataMahasiswa {
+private:
+    vector<Mahasiswa> data_mahasiswa;
+
+public:
+    void tambah_mahasiswa(string nama, string nim, string jurusan) {
+        Mahasiswa mahasiswa(nama, nim, jurusan);
+        data_mahasiswa.push_back(mahasiswa);
+        cout << "Biodata mahasiswa " << nama << " berhasil ditambahkan." << endl;
+    }
+
