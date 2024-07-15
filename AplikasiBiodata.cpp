@@ -33,4 +33,11 @@ void hapus_mahasiswa(string nim) {
         }
         cout << "Mahasiswa dengan NIM " << nim << " tidak ditemukan." << endl;
     }
-
+Mahasiswa* cari_mahasiswa(string nim) {
+        for (auto& mahasiswa : data_mahasiswa) {
+            if (mahasiswa.nim == nim) {
+                return &mahasiswa;
+            }
+        }
+        return nullptr;
+    }
