@@ -51,3 +51,13 @@ Mahasiswa* cari_mahasiswa(string nim) {
         }
     }
 };
+void menu() {
+    cout << "\nMenu:\n";
+    cout << "1. Tambah Mahasiswa\n";
+    cout << "2. Hapus Mahasiswa\n";
+    cout << "3. Cari Mahasiswa\n";
+    cout << "4. Tampilkan Semua Mahasiswa\n";
+    cout << "5. Keluar\n";
+    cout << "Pilih opsi: ";
+}
+
